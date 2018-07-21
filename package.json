@@ -1,0 +1,79 @@
+{
+  "name": "user_app_dash",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
+    "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
+    "@fortawesome/react-fontawesome": "0.1.0-11",
+    "@material-ui/core": "^1.3.0",
+    "@material-ui/icons": "^1.1.0",
+    "axios": "^0.18.0",
+    "connected-react-router": "^4.3.0",
+    "font-awesome": "^4.7.0",
+    "history": "^4.7.2",
+    "moment": "^2.22.2",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-flexbox-grid": "^2.1.2",
+    "react-fontawesome": "^1.6.1",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-router-redux": "^5.0.0-alpha.9",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-saga": "^0.16.0"
+  },
+  "scripts": {
+    "start": "./node_modules/npm-run-all/bin/npm-run-all/index.js --parallel start:*",
+    "start:client": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "./node_modules/npm-run-all/bin/npm-run-all/index.js test:coverage",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "./node_modules/eslint/bin/eslint.js .",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-jest": "^23.4.0",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "chai": "^4.1.2",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.4",
+    "eslint": "^5.1.0",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^5.0.0",
+    "jest": "^23.4.1",
+    "json-server": "^0.14.0",
+    "npm-run-all": "^4.1.3",
+    "react-test-renderer": "^16.4.1",
+    "redux-devtools": "^3.4.1"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js?$": "babel-jest"
+    },
+    "setupFiles": [
+      "./test/setup.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|jpg|png)$": "<rootDir>/test/empty-module.js"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!flexboxgrid)"
+    ]
+  }
+}
